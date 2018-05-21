@@ -5,9 +5,7 @@ export default (state = { loading: false, data: null }, action) => {
     }
     case 'SIMPLE_ACTION':
       return { ...state, loading: false, data: action.payload };
-      break;
     default:
       return state;
-      break;
   }
 };
