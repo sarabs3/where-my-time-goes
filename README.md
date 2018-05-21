@@ -1,7 +1,6 @@
 # Introduction
 
-React Boilerplate for quickly mock apps with React Router, Material UI and Redux.
-Created with Create React App Cli
+A simple time keeping app build on top of [React Material Boilerplate](https://github.com/sarabs3/react-material-bolierplate)
 
 ### Dependencies
 
