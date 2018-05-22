@@ -2,6 +2,8 @@ import React from 'react';
 import Table from '@material-ui/core/Table';
 import TableHead from '@material-ui/core/TableHead';
 import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 import TableHeading from './components/TableHeadings';
 import ColumnsData from './components/ColumnsData';
 
@@ -60,7 +62,13 @@ class TimeSheet extends React.Component {
           <TableHead>
             <TableHeading columns={columnsHeading} />
           </TableHead>
-          <ColumnsData columns={columns} match={match} />
+          <ColumnsData columns={columns} match={match}>
+            {e => (
+              <Button component={Link} to={`${match.path}/${e.id}`} variant="raised" color="primary">
+                Details
+              </Button>
+            )}
+          </ColumnsData>
         </Table>
       </Grid>
     );
