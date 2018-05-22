@@ -4,7 +4,7 @@ import TableRow from '@material-ui/core/TableRow';
 import TableBody from '@material-ui/core/TableBody';
 import PropTypes from 'prop-types';
 
-const ColumnsData = ({ columns, match, children }) => (
+const ColumnsData = ({ columns, children }) => (
   <TableBody>
     {columns.map(data => (
       <TableRow key={data.id}>
@@ -21,7 +21,6 @@ const ColumnsData = ({ columns, match, children }) => (
 
 ColumnsData.propTypes = {
   columns: PropTypes.arrayOf(Array),
-  match: PropTypes.objectOf(Object).isRequired,
   children: PropTypes.func,
 };
 ColumnsData.defaultProps = {

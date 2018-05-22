@@ -62,7 +62,7 @@ class TimeSheet extends React.Component {
           <TableHead>
             <TableHeading columns={columnsHeading} />
           </TableHead>
-          <ColumnsData columns={columns} match={match}>
+          <ColumnsData columns={columns}>
             {e => (
               <Button component={Link} to={`${match.path}/${e.id}`} variant="raised" color="primary">
                 Details
